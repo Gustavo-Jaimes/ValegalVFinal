@@ -1,0 +1,1715 @@
+/* ----------- VARIABLES    */
+@color_primario: #D93838;
+@color_secundario: rgb(253, 251, 251);
+@color_terciario: black;	
+
+/* ----------- FUENTES      */ 
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.lato{
+	 font-family: "My Custom Font", Verdana, Tahoma;
+}
+body{
+	font-size: 18px;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+@font-face{
+	font-family: PoppinsBlack;
+	src:url(./poppins/Poppins-Bold.ttf);
+	font-family: PoppinsRegular;
+	src:url(./poppins/Poppins-Regular.ttf);
+}
+
+
+/* ----------- COLORES      */
+a,
+a:hover,
+.uk-navbar-nav>li>a{
+	color: @color_primario;
+}
+
+.uk-navbar-container{
+	position: relative; 
+}
+
+em,
+.active,
+.buybutton,
+.uk-navbar-nav>li>a:hover,
+.color-primary,
+.color-primary-hover:hover{
+	color: @color_primario;
+}
+.buybutton:hover,
+.social,
+.color-secondary{
+	color: @color_secundario;
+}
+.color-terciario{
+	color: @color_terciario;
+}
+.color-verde{
+	color: #22cf5b;
+}
+.color-rojo{
+	color: #c4262e;
+}
+.color-rojo-vivo{
+	color: #ff0000;
+}
+.color-gris-9{
+	color: #8c8b8b;
+}
+.color-gris-7{
+	color: #777;
+}
+.color-gris-6{
+	color: #666;
+}
+.color-gris-4{
+	color: #444;
+}
+.color-gris{
+	color: #a7a6a4;
+}
+.color-gris-3{
+	color: #333;
+}
+.color-gris-2{
+	color: #222;
+}
+.color-gris-a,
+.color-gris-a:hover{
+	color: #a6a8ab;
+}
+.color-gris-d{
+	color: #ddd;
+}
+.uk-accordion-title:focus,
+.uk-accordion-title:hover,	
+.color-blanco,
+.color-blanco:hover{
+	color: white;
+}
+.uk-slidenav,
+.color-negro{
+	color: black;
+}
+
+/* ----------- FONDOS       */
+.bg-primary{
+	background: @color_primario;
+}
+.ajax-file-upload{
+	background: @color_primario!important;
+}
+.bg-secondary{
+	background: @color_secundario;
+}
+
+.uk-slidenav,
+.bg-none{
+	background: none;
+}
+.bg-danger,
+.bg-red{
+	background: #ff5d55;
+}
+.bg-success{
+	background: #9CDAB7;
+}
+.bg-blue{
+	background: #32b4cc;
+}
+.bg-warning,
+.bg-yellow{
+	background: #f6b61a;
+}
+
+.uk-navbar-dropdown,
+.bg-white{
+	background: white;
+}
+.bg-gris-claro{
+	background: #DDD;
+}
+.bg-gris{
+	background: #888;
+}
+.uk-subnav-pill > .uk-active > a,
+.bg-gris-oscuro{
+	background: #444;
+}
+.bg-black{
+	background: black;
+}
+
+.bg-dark{
+	background: rgba(0,0,0,.8);
+}
+.bg-oscuro{
+	background: rgba(0,0,0,.5);
+}
+.bg-claro{
+	background: rgba(250,250,250,.7);
+}
+
+.bg-test1{
+	background: #ff0;
+}
+.bg-test2{
+	background: #f0f;
+}
+.bg-test3{
+	background: #0ff;
+}
+.grayscale{
+	filter: grayscale(100%);
+}
+.grayscale:hover{
+	filter: grayscale(0%);
+	transition: .5s;
+}
+
+/* ----------- NAVEGACIÓN   */
+.uk-navbar-nav > li > a,
+.uk-navbar-item,
+.uk-navbar-toggle {
+	border-bottom: solid 3px transparent;
+	color: #fe9400;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	padding: 0 20px;
+	min-height: 50px;
+	text-transform: capitalize;
+}
+.uk-navbar-nav > li.uk-active > a,
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li > a.uk-open {
+	color: green;
+	outline: none;
+}
+.uk-navbar-dropdown-nav{
+	text-align: left;
+}
+.uk-navbar-dropdown {
+	margin: 0;
+}
+.uk-navbar-dropdown-nav>li>a{
+	font-size: 18px;
+	margin: 0;
+	padding-left: 5px;
+}
+
+
+/* Off canvas */
+.uk-offcanvas-bar{
+	background: black;
+}
+.uk-offcanvas-bar a{
+	border:solid 1px #666;
+	color: #CCC;
+	background: #00345a;
+	font-size: 1em!important;
+	text-align: left;
+	padding-left: 10px!important;
+}
+
+.uk-offcanvas-bar a:hover{
+	color:#DDD;
+	background: #333;
+	background-color: #fb2f48;
+}
+
+.uk-offcanvas-bar li{
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.uk-offcanvas-bar .uk-nav-sub a{
+	padding-left: 20px;
+}
+.uk-offcanvas-overlay::before{
+	background: rgba(0,0,0,.5);
+}
+.uk-nav-center.uk-nav-parent-icon>.uk-parent>a::after{
+	position: relative;
+}
+
+/* ----------- TEMPLATE     */
+.input-personal{
+	border: solid 1px @color_primario;
+}
+
+
+/*  ---------- GENERALES    */
+.uk-pagination li{
+	padding-left: 5px;
+}
+.uk-pagination a{
+	padding: 2px 10px;
+	border-radius: 0px;
+	// background: white;
+	// border: @color_primario 1px solid; 
+	// color: @color_primario;
+	color: #000;
+	font-size: 2em;
+}
+.uk-pagination 
+.uk-active,
+.uk-pagination a:hover{
+	// background: @color_primario;
+	// color: white;
+	border-bottom: @color_primario 10px solid;
+}
+.uk-lightbox .uk-slidenav{
+	border-radius: 100px;
+	color: white;
+	background: @color_primario;
+}
+#cotizacion-fixed{
+	top:0;
+	right:0px;
+	width:30px;
+	z-index: 1011;
+}
+#cotizacion-fixed div{
+	width: 40px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -150px;
+}
+#cotizacion-fixed img{
+	box-shadow: 0 0 20px white;
+	border-radius: 10px 0 0 10px;
+}
+a{
+	text-decoration: none!important;
+}
+a,
+a:hover,
+.uk-navbar-nav > li > a,
+.uk-button,
+.uk-button:hover,
+.transicion,
+.transicion:hover{
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+h1{
+	font-size: 1.2em;
+}
+h2{
+	font-size: 1.1em;
+}
+h3,h4,h5,h6{
+	font-size: 1em;
+}
+.alpha0{
+	opacity: 0;
+}
+.claro,
+.alpha-1-5:hover{
+	opacity:.6;
+}
+.oscuro,
+.alpha-1-0:hover{
+	opacity:0;
+}
+.alpha-1-0,
+.alpha-1-5,
+.claro:hover,
+.oscuro:hover,
+.alpha1hover:hover{
+	opacity: 1;
+}
+.margin-0{
+	margin: 0;
+}
+.margin-top-5{
+	margin-top: 5px;
+}
+.margin-top-10{
+	margin-top: 10px;
+}
+.margin-top-20{
+	margin-top: 20px;
+}
+.margin-top-25{
+	margin-top: 25px!important;
+}
+.margin-top-50{
+	margin-top: 50px;
+}
+.margin-top-100{
+	margin-top: 100px;
+}
+.margin-top-menos-150{
+	margin-top: -150px;
+}
+.margin-top-menos-100{
+	margin-top: -100px;
+}
+.margin-top-menos-50{
+	margin-top: -50px;
+}
+.margin-top-menos-20{
+	margin-top: -20px;
+}
+.margin-top-menos-10{
+	margin-top: -10px;
+}
+.margin-bottom-50{
+	margin-bottom: 50px;
+}
+.margin-h-5{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.margin-v-20{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.margin-v-25{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+.margin-v-50{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.margin-v-70{
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+.margin-right-20{
+	margin-right: 20px;
+}
+.margin-right-menos-50{
+	margin-right: -45px;
+}
+.margin-right-menos-20{
+	margin-right: -15px;
+}
+.padding-bottom-10{
+	padding-bottom: 10px;
+}
+.padding-bottom-20{
+	padding-bottom: 20px;
+}
+.padding-bottom-50{
+	padding-bottom: 50px;
+}
+.padding-bottom-60{
+	padding-bottom: 60px;
+}
+.padding-bottom-100{
+	padding-bottom: 100px;
+}
+.padding-bottom-200{
+	padding-bottom: 200px;
+}
+.padding-top-5{
+	padding-top: 5px;
+}
+.padding-top-10{
+	padding-top: 10px;
+}
+.padding-top-20{
+	padding-top: 20px;
+}
+.padding-top-30{
+	padding-top: 30px;
+}
+.padding-top-40{
+	padding-top: 40px;
+}
+.padding-top-50{
+	padding-top: 50px;
+}
+.padding-top-100{
+	padding-top: 100px;
+}
+.padding-v-3{
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+.padding-v-5{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.padding-v-10{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.padding-v-20{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.padding-v-50{
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.padding-v-100{
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+.padding-left-10{
+	padding-left: 10px;
+}
+.padding-left-20{
+	padding-left: 20px;
+}
+.padding-left-50{
+	padding-left: 50px;
+}
+.padding-left-100{
+	padding-left: 100px;
+}
+.padding-right-10{
+	padding-right: 10px;
+}
+.padding-right-20{
+	padding-right: 20px;
+}
+.padding-right-50{
+	padding-right: 50px;
+}
+.padding-h-5{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.padding-h-10{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.padding-h-20{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.padding-h-30{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.padding-h-50{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.padding-h-70{
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.padding-0{
+	padding: 0px;
+}
+.padding-5{
+	padding:5px;
+}
+.padding-10{
+	padding:10px;
+}
+.padding-15{
+	padding:15px;
+}
+.padding-20{
+	padding:20px;
+}
+.padding-30{
+	padding:30px;
+}
+.padding-50{
+	padding:50px;
+}
+.min-height-150px{
+	min-height: 150px;
+}
+.min-height-250px{
+	min-height: 250px;
+}
+.max-height-300px{
+	max-height: 300px;
+}
+.min-height-500px{
+	min-height: 500px;
+}
+.max-width-200{
+	max-width: 200px;
+}
+.max-width-600{
+	max-width: 600px;
+}
+.pointer{
+	cursor: pointer;
+}
+#map{
+	min-height: 400px;
+}
+.text-5{
+	font-size: .5em;
+}
+.text-6{
+	font-size: .6em;
+}
+.text-xs,
+.text-7{
+	font-size: .7em;
+}
+.text-8{
+	font-size: .8em;
+}
+.text-sm,
+.text-9
+{
+	font-size: .9em;
+}
+.text-11
+{
+	font-size: 1.1em;
+}
+.text-lg{
+	font-size: 1.2em;
+}
+.text-xl{
+	font-size: 1.5em;
+}
+.text-xxl{
+	font-size: 2em;
+}
+.text-xxxl{
+	font-size: 3em;
+}
+.text-v{
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+.z1{
+	z-index: 1;
+}
+.z2{
+	z-index: 2;
+}
+textarea{
+	resize:none;
+}
+
+/* BOTONES */
+.uk-button{
+	font-weight: 700;
+	text-transform: none;
+}
+
+/* Danger */
+.uk-button-danger{
+	background: #f00;
+	color: #fff;
+}
+.uk-button-danger:active,
+.uk-button-danger.uk-active,
+.uk-button-danger:hover,
+.uk-button-danger:focus{
+	background: #a00;
+	color: #fff;
+}
+
+/*  Blanco */
+.uk-button-white {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #fff;
+}
+/* Hover + Focus */
+.uk-button-white:hover,
+.uk-button-white:focus,
+.uk-button-white:active,
+.uk-button-white.uk-active {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Personal */
+.uk-button-personal {
+	  background: #ff7d00;
+	  color: white;
+	  border: solid 2px #ff7d00;
+}
+/* Hover + Focus */
+.uk-button-personal:active,
+.uk-button-personal.uk-active,
+.uk-button-personal:hover,
+.uk-button-personal:focus {
+	  background-color: white;
+	  border: solid 2px @color_primario;
+	  color: @color_primario;
+}
+
+
+.uk-lightbox {
+	background: rgba(0,0,0,.7)!important;
+}
+.uk-notification-message{
+	background: none!important;
+	color: white;
+	text-align: center;
+}
+.uk-notification-message div{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+
+/* ----------- CHAT DE WHATSAPP  */
+#whatsapp-plugin{
+	background: url(../img/design/whats-bg.jpg);
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	width: 300px;
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	border-radius: 10px 10px 0 0;
+}
+#whats-show{
+	background-color: rgb(9, 94, 84);
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 10px 13px;
+}
+#whats-head{
+	background-color: rgb(9, 94, 84);
+	border-radius: 10px 10px 0 0;
+	line-height: 18px;
+}
+#whats-body-1{
+	box-sizing: border-box;
+	height: 120px;
+}
+#whats-body-2{
+	background: url(../img/design/whats-globo.png) no-repeat center left;
+	box-sizing: border-box;
+	font-size: 13px;
+	height: 100px;
+	padding: 33px 0 0 35px;
+	height: 120px;
+}
+#whats-footer{
+	background: white;
+	height: 60px;
+}
+#button-whats{
+	background: rgb(79, 206, 93);
+	color: white;
+	border-radius: 50px;
+}
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 transparent; 
+  border-radius: 8px;
+  background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #CCC;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+
+/* ----------- XML SITE MAP */
+urlset{
+	background: url(../img/design/logo.png) no-repeat top center @color_primario;
+	padding-top: 110px;
+}
+url {
+	background: #fff;
+	display: block;
+	padding: 10px
+}
+loc{
+	display: block;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+
+
+//********************************************************************************  ESTILOS PERSONALIZADOS ***********************************************************************************//
+
+// Estilos de HEADER
+.header-container .navbar-container .navbar-container-logo{
+background-color: white; 
+border-radius: 0 0% 90% 0; 
+position: absolute; 
+top:0; 
+left:-2.5em; 
+z-index: 2; 
+padding: 1vw;
+}
+
+.header{
+	position:absolute; 
+	z-index: 4;
+	top: 0em;
+	left: 0%; 
+	width: 100%;
+	height: 2em;
+} 
+.header .container{
+	background-color: #FFFFFF;
+}
+.header .container .logo img{
+	width: 17em;
+	margin-top: 2em;
+}
+.header .item{
+	margin-top: 4em;
+}
+.header .item i{
+	font-size:20px; color: #B6A188
+}
+.header .item p{
+	font-weight: bold; 
+	padding-left: 1em; 
+	margin: 0; 
+	font-family: PoppinsRegular; 
+	color: black;
+}
+.header .anuncio{
+	font-family: serif;
+	margin-left: 1em;
+	text-align: left;
+}
+.header .barra{
+	background-color: #F7F7F7;
+}
+.header .barra .opt{
+	padding: 1em;
+}
+.header .barra .opt a{
+	font-family: PoppinsRegular; 
+	color: black; 
+	font-size: 1em;
+}
+
+
+
+// Estilos de FOOTER
+footer .container{
+	background-color: #1D1D1D;
+}
+footer .footer-img img{
+	width: 20em;
+}  
+footer .info{
+	color: white; 
+	font-weight: bold;
+	text-align: left;
+	border-bottom: solid #B6A188 3px; 
+	width: 12em; 
+	font-family: serif;
+}
+footer .direccion{
+	color: white; 
+	margin: 0; 
+	font-family: serif; 
+	text-align: left;
+}
+footer .tel{
+	font-weight: bold; 
+	padding-left: 1em; 
+	color: white; 
+	font-family: serif;
+	margin: 0;
+}
+footer .raya{
+	font-size:20px; 
+	color: #B6A188;
+}
+footer .aviso p{
+	color: white; 
+	font-weight: bold; 
+	padding: 1.5em 0;
+	background-color:black; 
+	font-family: serif;
+}
+
+
+//////////// Estilos seccion INICIO    ///////////////
+
+
+
+.inicio-seccion2{
+background-image: url("../img/design/fondo1.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.previo-img{
+font-size:30px; 
+color: black; 
+position: absolute; 
+top: -1em; 
+left: -1em;
+}
+.siguiente-img{
+font-size:30px; 
+color: black; 
+position: absolute; 
+top: -1em; 
+left: 0em;
+}
+
+
+.imageDiv{
+background: #fff;
+display: block;
+height: 30em;
+border-radius: 2px 2px 2px 2px;
+-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;	   
+}
+
+.bottomDivCarousel{
+position:relative;
+width: 65%;
+bottom:5em;
+left: 16em;
+border-radius: 1em;
+height: 26 em;
+}
+.bottomDiv{
+position:relative;
+width: 50%;
+bottom: 0em;
+left: 25em;
+border-radius: 1em;
+height: 30em;
+}
+
+.bottomDivArea{
+position: relative;
+width: 90%;
+bottom: -1em;
+left: 5em;
+border-radius: 1em;
+height: 19em;
+}
+.inicioabogado{
+	margin-top:14.5em;
+}
+.inicioabogado .imageDiv .banner{
+	width: 100%;
+	height: 40em; 
+	object-fit: cover;
+}
+.inicioabogado .bottomDiv {
+	background-color: #E6E6E6;
+}
+.inicioabogado .bottomDiv .abogado h2{
+	margin-top: 2.5em; 
+	font-size: 1.5em;
+	font-weight: bold; 
+	font-family: PoppinsBlack;
+}
+.inicioabogado .bottomDiv .abogado p{
+	text-align: justify; 
+	font-size: .8em; 
+	padding-top: 1em; 
+	font-family: PoppinsRegular;
+}
+.inicioabogado .foto{
+	margin-top: 1.8em;
+}
+.inicioabogado .letrero{
+	margin-top: 6em;
+}
+.inicioabogado .letrero .experto{
+	font-weight: bold; 
+	font-size: 1.2em; 
+	color: #B3B3B3;
+}
+.inicioabogado .letrero .servicio{
+	font-weight: bold; 
+	font-size: 1.8em; 
+	padding-bottom: 0em;
+}
+.inicioabogado .carousel-servicios{
+	margin: 3em 0;
+}
+.inicioabogado .carousel-servicios .img img {
+	height: 12em;
+	width: 12em;
+	opacity: 0.8;
+	transform: scale(1);
+	transition: transform 0.5s, opacity 0.5s;
+	padding: .5em;
+}
+.inicioabogado .carousel-servicios .img img:hover{
+	opacity: 1;
+	transform: scale(1.2);
+	background-color: #C5AD7C;
+}
+.banner-mail{
+	background-image: url(../img/design/banner1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	object-fit: cover; 
+	height: 37em;
+}
+.banner-mail .asesoria{
+	font-weight: bold; 
+	font-size: 2em; 
+	color: white; 
+	margin: 2em 0 0 0;
+	font-family: PoppinsBlack;
+}
+.banner-mail .datos{
+	font-size: 1.3em; 
+	color: white; 
+	margin: 0; 
+	font-family: PoppinsRegular;
+}
+.banner-mail .email .input{
+	background-color: #1D1D1D;
+	border: solid 1px #1D1D1D; 
+	font-size: .7em; 
+	padding: 2em 2em; 
+	color: white;
+}
+.banner-mail .email .boton{
+	background-color: #C5AD7C; 
+	padding: .8em; 
+	border-radius: 5px; 
+	margin: 0 0.5em;
+}
+.banner-mail .email .boton a{
+	color: white;
+}
+#boq .equipo{
+	margin-bottom: 6em;
+	margin-top: 0;
+}
+.equipo .container{
+	background-color: #E7E7E7;
+}
+.equipo .container .nuestro h1{
+	margin-top: 1.2em; 
+	margin-bottom: 0; 
+	font-size: 1.9em; 
+	font-weight: bold; 
+	padding-top: 1em;
+	font-family: PoppinsBlack;
+}
+.equipo .container .nuestro p{
+	margin: 0; 
+	font-size: 1em; 
+	font-family: PoppinsRegular;
+}
+.equipo .container .nuestro .box{
+	margin-top: 2em;
+}
+.equipo .container .nuestro .box .nombre{
+	color: white; 
+	font-size: 1.2em;
+	font-weight: bold; 
+	margin:0;
+	padding-top: .2em;
+	font-family: PoppinsBlack;
+}
+.equipo .container .nuestro .box .puesto{
+	color: white; 
+	margin:0; 
+	font-family: PoppinsRegular; 
+	font-size: 1.2em;
+}
+.equipo .articulosRecientes{
+	background-color: white;
+}
+.equipo .articulosRecientes h1{
+	font-size: 2.5rem;
+	margin-top: 1em; 
+	font-family: PoppinsBlack; 
+	font-weight: bold;
+}
+.equipo .articulosRecientes p{
+	font-size: 1em;
+	color: #000;
+	text-align: justify;
+	padding-left: 0.5em;
+}
+.equipo .articulosRecientes .admin{
+	font-size: 1em;
+	color: #C5AD7C;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.equipo .articulosRecientes .curso-card .mas{
+	border: none; 
+	font-size: 1em; 
+	background-color: transparent; 
+	font-family: PoppinsBlack; 
+	font-weight: bold;
+}
+
+//////////// Estilos seccion QUIENES SOMOS    ///////////////
+
+.somos{
+	margin-top: 15em;
+}
+.somos .imageDiv .bannersomos{
+	width: 100%;
+	height: 40em; 
+	object-fit: cover;
+}
+.somos .bottomDivCarousel{
+	background-color: transparent;
+}
+.somos .bottomDivCarousel .equipo h2{
+	font-size: 2.2em;
+	font-weight: bold; 
+	font-family: PoppinsBlack;
+	margin: 0; color: white;
+}
+.somos .bottomDivCarousel .equipo hr{
+	width: 4em; 
+	border-top: solid #BFA46D .4em;
+	margin-left: 0em; margin-top:0;
+}
+.somos .bottomDivCarousel .carousel{
+	height: 20em; 
+	padding: 0;
+}
+.somos .bottomDivCarousel .carousel img{
+	height: 20em; 
+	width: 20em;
+	object-fit: cover;
+}
+
+.acerca .acercaDe h1{
+	font-size: 2.2em;
+	font-weight: bold; 
+	font-family: PoppinsBlack;
+}
+.acerca .acercaDe hr{
+	width: 6em; 
+	border-top: solid #BFA46D .4em;
+	margin-left: 28em; 
+	margin-top:0
+}
+.acerca .logo img{
+	width: 35em;
+}
+.acerca .logo .texto{
+	font-family: PoppinsRegular;
+	color: black;
+}
+.acerca .logo .mision{
+	margin: 2em 0;
+}
+.acerca .logo .mision h1{
+	font-size: 2.2em;
+	font-weight: bold; 
+	font-family: PoppinsBlack;
+	margin: 0;
+}
+.acerca .logo .mision hr{
+	width: 5.5em; 
+	border-top: solid #BFA46D .4em;
+	margin-left: 25.6em; 
+	margin-top:0
+}
+.acerca .logo .valores{
+	background-color: #E5E5E5;
+}
+.acerca .logo .valores .uno{
+	margin-top: 1em;
+}
+.acerca .logo .valores .tres{
+	border-right: solid black 2px; 
+	margin: 2em 0;
+}
+.acerca .logo .valores .tres p{
+	text-align: center; 
+	font-family: PoppinsRegular; 
+	color: black; 
+	font-size: 1.1em; 
+	padding: .3em 0;
+}
+.acerca .logo .valores .cinco{
+	margin: 2em 0 3em 5em;
+}
+.acerca .logo .valores .cinco p{
+	text-align: center; 
+	font-family: PoppinsRegular; 
+	color: black; 
+	font-size: 1.1em; 
+	padding: .3em 0;
+}
+//////////// Estilos seccion NOSOTROS    ///////////////
+.nosotros {
+	margin-top:15em; 
+	margin-bottom: 3em;
+}
+.nosotros .banner2{
+	width: 100%;
+	height: 40em; 
+	object-fit: cover;
+}
+.nosotros .bottomDivArea{
+	background-color: transparent;
+}
+.nosotros .bottomDivArea .area h2{
+	margin-top: 1.5em; 
+	font-size: 1.5em;
+	font-weight: bold; 
+	color: white; 
+	margin-bottom: 0;
+}
+.nosotros .bottomDivArea .area hr{
+	width: 6em; 
+	border-top: solid #BFA46D .4em;
+	margin-left: 0em; 
+	margin-top:0;
+}
+.nosotros .bottomDivArea .carousel img{
+	height: 12em; 
+	width: 14em; 
+	object-fit: cover;
+}
+.nosotros .texto .derecho .titulo{
+	font-family: PoppinsRegular; 
+	font-size:2.3em; 
+	color: black;
+}
+.nosotros .texto .derecho .txt{
+	font-family: PoppinsRegular; 
+	font-size:1.2em; 
+	color: black;
+}
+
+
+////////////////// Estilos seccion de SERVICIOS ///////////////////////
+
+.servicios{
+	margin-top: 15em;
+}
+.servicios h1{
+	font-size: 2.5em; 
+	font-family: PoppinsBlack; 
+	padding: .5em 0;
+}
+.servicios .texto{
+	padding: 0 15em; 
+	font-family: PoppinsRegular; 
+	font-size:1.1em;
+}
+.servicios .cartas{
+	margin: 1em 0;
+}
+.servicios .cartas .botonSig{
+	font-size: 1em; 
+	font-weight: bold; 
+	padding: 0em .8em; 
+	background-color: black; 
+	margin: 0 .5em .5em 0; 
+	color: white; 
+	border-radius: 8px;
+}
+.container .productos{
+	margin: 0 1em;
+}
+.container .productos .cont{
+	padding: 0;
+}
+.container .productos .cont .container-img{
+	max-height: 20em; 
+	max-width: 35em;
+}
+.container .productos .cont .container-img img{
+	height: 15em; 
+	width:100%; 
+	object-fit: cover;
+}
+.container .productos .cont .contenedor-texto{
+	height: 15em; 
+	padding: 0 0.1em;
+}
+.container .productos .cont .contenedor-texto h3{
+	font-family: PoppinsBlack;
+	margin: .5em;
+	font-weight: bold;
+}
+.container .productos .cont .contenedor-texto p{
+	margin: 0;
+	text-align: justify;
+}
+.container .productos .cont .container-img img {
+    height: 13em;
+}
+
+.boxwrap{
+margin-left: auto;
+margin-right: auto;
+top: 50px;
+}
+
+.box{
+width: 18em;
+height: 4em;
+}
+
+#box1{
+margin-left: 2em;
+background-image: url('../img/design/consultor.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+height: 33em;
+width: 50%;
+}
+
+#box2{
+margin-top: -200px;
+margin-bottom: -75px;
+margin-left: 25em;
+background-color: #BFA46D;
+}
+
+#box3{
+margin-left: 100px;
+background-color: green;
+}
+
+.seccion1-container-p{
+padding: 1.5em 0;
+}
+.seccion1-container-p p{
+border-bottom: solid #ff9300 5px; 
+padding: 0em 3em; 
+color: white; 
+font-weight: bold; 
+margin:0;
+}
+
+
+
+
+
+
+
+
+///////////////////////*    Estilos de la seccion Articulos (material 3)    */////////////////
+
+.seccion2-material3 .seccion2-material3-proceso .titulo{
+	font-family: PoppinsBlack; 
+	font-size: 2.3em; 
+	font-weight: bold; 
+	color: black;
+}
+.seccion2-material3 .container-info{
+	margin-top: 3em;
+}
+.seccion1-material3 .seccion1-container-letrero-curso .seccion1-subcontainer-letrero-curso .seccion1-container-p p{
+font-size: 1.4em; 
+padding: 0 2em; 
+border-bottom: solid #ff9300 .2em;
+}
+.uk-dotnav>*>*{
+border-radius: unset;
+width: 1.5em;
+	background-color: #a0a0a0;
+}
+	.uk-dotnav>.uk-active>* {
+	background-color: #f29819;
+}
+.seccion2-material3 .cont-material{
+	margin-top: 2em;
+}
+.seccion1-material3{
+	margin-top: 15em;
+}
+/////////////    HEADER    ////////////////////////////
+
+
+/* ----------- MEDIA QUERY  */
+@media (min-width: 1800px){
+
+	//////////// Estilos seccion ACERCA   ///////////////
+	.acerca .acercaDe{
+		margin-top: 6em;
+	}
+	.acerca .logo .mision hr {
+		width: 4em;
+		margin-left: 25.6em;
+	}
+}
+@media (max-width: 1600px){/*Tamaño xl*/
+	//////////// Estilos seccion INICIO   ///////////////
+	.bottomDiv {
+		height: 26em;
+	}
+	.inicioabogado .carousel-servicios .img img {
+		height: 12em;
+		width: 12em;
+	}
+	#box1 {
+		height: 32em;
+		width: 55%;
+	}
+
+	//////////// Estilos seccion QUIENES SOMOS    ///////////////
+	.somos .imageDiv .bannersomos {
+		height: 38em;
+	}
+	.somos .bottomDivCarousel .carousel img {
+		height: 17em;
+		width: 17em;
+		margin-left: 2em;
+	}
+	.acerca .acercaDe hr {
+		margin-left: 21em;
+	}
+	.acerca .logo .mision hr {
+		margin-left: 20.6em;
+	}
+	//////////// Estilos seccion areas de practicas    ///////////////
+	.nosotros .bottomDivArea .area h2 {
+		margin-top: 0em;
+		font-size: 2em;
+	}
+	///////////////////////*    Estilos de la seccion Articulos (material 3)    */////////////////
+
+	.seccion2-material3 .container-info{
+		margin-top: 0em;
+	}
+
+}
+@media (max-width: 1400px){
+	//////////// Estilos seccion inicio    ///////////////
+	.inicioabogado .carousel-servicios .img img {
+		height: 10em;
+		width: 12em;
+	}
+	#box2 {
+		margin-left: 18em;
+	}
+	#box1 {
+		height: 30em;
+		width: 55%;
+		margin-left: 3em;
+	}
+	//////////// Estilos seccion QUIENES SOMOS    ///////////////
+	.somos .imageDiv .bannersomos {
+		height: 34em;
+	}
+	.bottomDivCarousel {
+		bottom: 10em;
+	}
+	.acerca .acercaDe hr {
+		margin-left: 18em;
+	}
+	.somos .bottomDivCarousel .carousel img {
+		height: 15em;
+		width: 15em;
+		margin-left: 2em;
+	}
+	.acerca .logo .mision hr {
+		margin-left: 17em;
+		width: 4.5em;
+	}
+	//////////// Estilos seccion areas de practicas    ///////////////
+	.nosotros .bottomDivArea .carousel img {
+		height: 10em;
+		width: 12em;
+	}
+	////////////////// Estilos seccion de SERVICIOS ///////////////////////
+	.servicios .texto {
+		padding: 0 10em;
+	}
+
+}
+@media (max-width: 1200px){/*Tamaño l*/
+	//////////// Estilos seccion inicio    ///////////////
+	.bottomDiv {
+		width: 60%;
+		left: 14em;
+	}
+	.inicioabogado .carousel-servicios .img img {
+		height: 9em;
+		width: 9em;
+	}
+	.banner-mail .email .boton {
+		margin: 0 2.5em;
+	}
+	.equipo .articulosRecientes p {
+		font-size: .8em;
+	}
+	#box1 {
+		height: 30em;
+		width: 66%;
+	}
+	#box2 {
+		margin-left: 13em;
+	}
+	#box2 {
+		margin-top: -144px;
+	}
+	//////////// Estilos seccion QUIENES SOMOS    ///////////////
+	.bottomDivCarousel {
+		width: 76%;
+		left: 10em;
+	}
+	.somos .bottomDivCarousel .container-carousel{
+		margin-top: -2em;
+	}
+	.acerca .acercaDe hr {
+		margin-left: 15em;
+		width: 5em;
+	}
+	.acerca .logo .mision hr {
+		margin-left: 14em;
+		width: 4em;
+	}
+	.acerca .logo .valores .cinco {
+		margin: 2em 0;
+	}
+	//////////// Estilos seccion areas de practicas    ///////////////
+	.nosotros .bottomDivArea .carousel img {
+		height: 8em;
+		width: 10em;
+	}
+	.nosotros .texto .derecho .titulo {
+		font-size: 1.8em;
+	}
+	.nosotros .texto .derecho .txt {
+		font-size: 1em;
+	}
+	////////////////// Estilos seccion de SERVICIOS ///////////////////////
+	.servicios .texto {
+		padding: 0px 7em;
+	}
+	.container .productos .cont .contenedor-texto h3{
+		font-size: 1em;
+	}
+	.container .productos .cont .contenedor-texto p {
+		font-size: 1em;
+	}
+	.container .productos .cont .container-img img {
+		height: 11em;
+	}
+
+}
+@media (max-width: 960px){ /*Tamaño m*/
+}
+@media (max-width: 820px){	
+}
+@media (max-width: 640px){/* Tamaño s*/
+	
+}
+@media (max-width: 550px){
+	.inicioabogado {
+		margin-top: 0em;
+	}
+	.inicioabogado .imageDiv .banner {
+		height: 16em;
+	}
+	.imageDiv {
+		height: 14em;
+	}
+	.bottomDiv {
+		width: 85%;
+		left: 2em;
+		height: 18em;
+	}
+	.inicioabogado .bottomDiv .abogado h2 {
+		margin: 0.2em;
+		font-size: 1em;
+	}
+	.inicioabogado .bottomDiv .abogado p {
+		padding-top: 0em;
+		margin: 0;
+		padding: 0.5em;
+	}
+	.inicioabogado .letrero .experto{
+		margin-top: 13em;
+	}
+	.inicioabogado .foto {
+		margin-top: 0em;
+		width: 15em;
+		object-fit: cover;
+	}
+	.inicioabogado .letrero .experto {
+		font-size: 1.4em;
+	}
+	.inicioabogado .letrero .servicio {
+		font-size: 1.3em;
+	}
+	.inicioabogado .carousel-servicios .img img {
+		height: 12em;
+		width: 12em;
+	}
+	.inicioabogado .carousel-servicios {
+		margin: 1em 0;
+	}
+	.banner-mail .asesoria {
+		font-size: 2.5em;
+		margin: 1em 0 0 0;
+	}
+	.banner-mail .datos {
+		font-size: 1em;
+	}
+	.banner-mail {
+		height: 44em;
+	}
+	#boq .banner-mail .email{
+		padding: 1em 1em 0em 3em;
+	}
+	.equipo .articulosRecientes h1 {
+		font-size: 2rem;
+	}
+	.equipo .articulosRecientes p {
+		padding: 0 1em;
+	}
+	#boq .equipo {
+		margin-bottom: 0em; 
+	}
+	footer .info {
+		margin-left: 7em;
+	}
+	footer .footer-img img {
+		width: 17em;
+	}
+	footer .direccion {
+		margin-left: 2em;
+		text-align: center;
+	}
+	footer .tel{
+		margin: 0;
+	}
+
+	//Seccion de somos
+	.somos {
+		margin-top: 0em;
+		height: 23em;
+	}
+	.somos .imageDiv .bannersomos {
+		height: 16em;
+	}
+	.bottomDivCarousel {
+		left: 4em;
+	}
+	.somos .bottomDivCarousel .carousel img {
+		height: 10em;
+		width: 10em;
+	}
+	.somos .bottomDivCarousel .carousel img {
+		height: 13em;
+		width: 13em;
+	}
+	.somos .bottomDivCarousel .equipo h2 {
+		font-size: 1.5em;
+	}
+	.acerca .acercaDe hr {
+		margin-left: 6em;
+		width: 4em;
+	}
+	.acerca .logo{
+		padding: 0 1.5em 0 0;
+	}
+	.acerca .logo .mision hr {
+		margin-left: 6.5em;
+		width: 3em;
+	}
+	.acerca .logo .valores .tres {
+		border-right: none;
+	}
+	.acerca .container-valegal{
+		margin-left: 2em;
+		padding: 0;
+	}
+	.acerca .logo .valores {
+		margin-left: 1em;
+	}
+
+	//Seccion de nosotros
+	.nosotros {
+		margin-top: 0em;
+	}
+	.nosotros .banner2 {
+		width: 100%;
+		height: 16em;
+	}
+	.bottomDivArea {
+		bottom: 5em;
+	}
+	.nosotros .bottomDivArea .area h2 {
+		font-size: 1.2em;
+	}
+	.bottomDivArea {
+		left: 2em;
+	}
+	.nosotros .bottomDivArea .carousel img {
+		height: 10em;
+		width: 12em;
+	}
+	.nosotros .bottomDivArea .area hr {
+		width: 4em;
+	}
+	.nosotros .texto .derecho .txt {
+		padding: 0 0.8em;
+	}
+	.nosotros .texto .derecho .titulo {
+		font-size: 1em;
+		text-align: center;
+		padding: 0 0.5em;
+	}
+	//Seccion de servicios
+	.servicios .texto {
+		padding: 0.5em 0.7em;
+		font-size: 1em;
+	}
+	.servicios .categorias {
+		padding: 0;
+	}
+	.servicios {
+		margin-top: 0em;
+	}
+	.servicios h1 {
+		font-size: 1.5em;
+	}
+	.servicios .contenido{
+		margin-left: 1.5em;
+	}
+	//Seccion de articulos (material)
+	.seccion1-material3{
+		margin-top: 0em;
+	}
+	.seccion2-material3 .cont-material {
+		margin: 0em;
+	}
+	.seccion2-material3 .carousel{
+		padding: 0;
+	}
+	.seccion2-material3 .container-info .seccion2-material3-proceso{
+		padding: 0 0.5em;
+	}
+}
+
