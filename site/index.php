@@ -34,6 +34,7 @@ switch ($identificador) {
 
 	case 2:
 		$pag = (isset($_GET['pag'])) ? $_GET['pag'] : 0;
+		$filter = (isset($_GET['filter'])) ? $_GET['filter'] : 0;
 		$prodPag = 6;
 		include 'includes/includes.php';
 		include 'pages/servicios.php';
