@@ -169,19 +169,19 @@
       }
 
     $widget.='
-    <div class="container-card-gen">
-          <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-								<div class="uk-card-media-left uk-cover-container"> 
-                    <a href="'.$link.'"><img src="'.$firstPic.'" alt="" style="width: 19em; height: 10em;" uk-cover></a>
-								</div>
-								<div>
-									<div class="uk-card-body uk-padding-remove" style="margin: .5em; 1em">
-                    <div><a class="estilo-titulo" href="'.$link.'">'.$titulo.'</a></div>
-										<p class="estilo-subtitulo">'.$descripcion.'</p>
-									</div>
-								</div>
-		      </div>
-    </div>
+      <div class="container-card-gen">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                  <div class="uk-card-media-left uk-cover-container"> 
+                      <a href="'.$link.'"><img src="'.$firstPic.'" alt="" style="width: 19em; height: 10em;" uk-cover></a>
+                  </div>
+                  <div>
+                    <div class="uk-card-body uk-padding-remove" style="margin: .5em; 1em">
+                      <div><a class="estilo-titulo" href="'.$link.'">'.$titulo.'</a></div>
+                      <p class="estilo-subtitulo">'.$descripcion.'</p>
+                    </div>
+                  </div>
+            </div>
+      </div>
     ';
 
     return $widget;
@@ -315,7 +315,7 @@
         <a class="a1" href="'.$link.'"> <h3 class="uk-card-title"><b class="titulo-curso" style="font-family: PoppinsBlack; font-size: .9em;">'.$titulo.'</b></h3>
           <p style="font-family: PoppinsBlack; font-size: .9em;">'.$descripcion.'</p>
       </div></a>
-<!-- <div class="botones">
+      <!-- <div class="botones">
           <a class="a1" href="'.$link.'">'.$detalles.'</a>
       </div>
       -->';

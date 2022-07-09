@@ -5,7 +5,7 @@ RewriteEngine On
 RewriteRule ^(.*)\_(.*)\_.*.-Calendario$     index.php?identificador=5&ano=$1&mes=$2
 
 RewriteRule ^inicio$                         index.php?identificador=1
-RewriteRule ^(.*)\_servicios$                index.php?identificador=2&pag=$1
+RewriteRule ^(.*)\_(.*)\_servicios$         index.php?identificador=2&pag=$1&filter=$2
 RewriteRule ^servicios$                      index.php?identificador=2
 RewriteRule ^(.*)\_material$                 index.php?identificador=3&id=$1
 RewriteRule ^(.*)\_proyectos$                index.php?identificador=4&id=$1
